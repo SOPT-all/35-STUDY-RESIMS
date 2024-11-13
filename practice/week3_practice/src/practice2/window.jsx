@@ -1,5 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import ListItem from "./ListItem";
+import { FixedSizeList } from "react-window";
+
+const ListItemRow = ({ index, style }) => (
+  <ListItem style={style} order={index} />
+);
 
 const Window = () => {
   const [dummy, _] = useState(() => new Array(10000).fill(0));
@@ -7,13 +12,16 @@ const Window = () => {
 
   return (
     <>
-      <button onClick={() => setCount(count + 1)}>
-        상태 증가
-      </button>
+      <button onClick={() => setCount(count + 1)}>상태 증가</button>
       <div>상태 값: {count}</div>
-      {dummy.map((_, index) => (
-        <ListItem key={index} order={index} />
-      ))}
+      <FixedSizeList
+        height={800}
+        itemCount={10000}
+        itemSize={50}
+        width={"100%"}
+      >
+        {ListItemRow}
+      </FixedSizeList>
     </>
   );
 };
