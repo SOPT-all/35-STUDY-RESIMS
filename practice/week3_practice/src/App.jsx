@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './Home';
 import Parent from './Practice1/Parent';
-import Window from './Practice2/Window';
+import Window from './practice2/Window';
 
 const router = createBrowserRouter(
   [
