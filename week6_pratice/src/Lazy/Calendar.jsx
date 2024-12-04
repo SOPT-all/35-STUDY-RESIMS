@@ -14,7 +14,14 @@ const Calendar = () => {
         marginBottom: "300px",
       }}
     >
-      <h1 onClick={() => setShowDatePicker(true)}>
+      <h1
+        style={{
+          cursor: "pointer",
+          color: showDatePicker ? "gray" : "black",
+          width: "500px",
+        }}
+        onClick={() => setShowDatePicker(true)}
+      >
         클릭하면 캘린더가 열립니다.
       </h1>
 

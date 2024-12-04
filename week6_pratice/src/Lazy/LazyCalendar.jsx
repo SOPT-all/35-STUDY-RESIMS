@@ -3,6 +3,10 @@ import "react-datepicker/dist/react-datepicker.css";
 
 const LazyDatePicker = lazy(() => import("react-datepicker"));
 
+const preloadDatePicker = () => {
+  import("react-datepicker");
+};
+
 const LazyCalendar = () => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [showDatePicker, setShowDatePicker] = useState(false);
@@ -13,11 +17,17 @@ const LazyCalendar = () => {
         textAlign: "center",
         alignItems: "ceter",
         marginBottom: "300px",
+        
       }}
     >
       <h1
         onClick={() => setShowDatePicker(true)}
-        style={{ cursor: "pointer", color: showDatePicker ? "gray" : "black" }}
+        onMouseEnter={preloadDatePicker}
+        style={{
+          cursor: "pointer",
+          color: showDatePicker ? "gray" : "black",
+          width: "500px",
+        }}
       >
         클릭하면 캘린더를 사용할 수 있습니다.
       </h1>
