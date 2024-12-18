@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1734532474618" clover="3.2.0">
+  <project timestamp="1734532474620" name="All files">
+    <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4" elements="14" coveredelements="14" complexity="0" loc="8" ncloc="8" packages="2" files="2" classes="2"/>
+    <package name="assets">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="members.js" path="C:\Users\wook\react-study\35-STUDY-WEB-RESIMS\week8\src\assets\members.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components">
+      <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <file name="FilterList.jsx" path="C:\Users\wook\react-study\35-STUDY-WEB-RESIMS\week8\src\components\FilterList.jsx">
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="6" count="8" type="stmt"/>
+        <line num="7" count="232" type="stmt"/>
+        <line num="10" count="8" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="21" count="167" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
